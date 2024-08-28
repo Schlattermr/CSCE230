@@ -1,0 +1,52 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do mux2input1bit_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/mryan/Desktop/CSCE230/Lab06/mux2input1bit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:38:54 on Sep 27,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/mryan/Desktop/CSCE230/Lab06/mux2input1bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2input1bit
+# -- Compiling architecture implementation1 of mux2input1bit
+# End time: 15:38:54 on Sep 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# do "C:/Users/mryan/Desktop/CSCE230/Lab06/task.do"
+#the name must be the same as your vhdl filename
+# vsim mux2input1bit
+# vsim mux2input1bit 
+# Start time: 15:38:54 on Sep 27,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux2input1bit(implementation1)
+# 
+#view waveform
+# view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+# 
+#view input signals
+# add wave a
+# add wave b
+# add wave s
+# 
+#view output signal
+# add wave outputt
+# ** Error: (vish-4014) No objects found matching 'outputt'.
+# Error in macro C:\Users\mryan\Desktop\CSCE230\Lab06\task.do line 13
+# (vish-4014) No objects found matching 'outputt'.
+#     while executing
+# "add wave outputt"
+# End time: 15:39:26 on Sep 27,2023, Elapsed time: 0:00:32
+# Errors: 3, Warnings: 0
