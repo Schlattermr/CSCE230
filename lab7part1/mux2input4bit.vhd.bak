@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mux2input4bit is
+	port(
+		s : in std_logic;
+		a,b : in std_logic_vector(3 downto 0);
+		output : out std_logic_vector(3 downto 0));
+end mux2input4bit;
+
+architecture implementation of mux2input4bit is
+	component mux2input1bit is
+		port(
+			s : in std_logic;
+			a,b : in std_logic;
+			output : out std_logic);
+	end component;
+begin
+
+	-- Exactly four component statements below
+
+end implementation;

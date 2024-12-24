@@ -1,0 +1,43 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity counter is
+	port(
+		clock : in std_logic;
+		reset : in std_logic;
+		increment : in std_logic;
+		output : out std_logic_vector(6 downto 0);
+		debug_current_state : out std_logic_vector(2 downto 0));
+end counter;
+
+architecture implementation of counter is
+	signal current_state: std_logic_vector(2 downto 0);
+	signal next_state : std_logic_vector(2 downto 0);
+begin
+	debug_current_state <= current_state;
+
+	-- current state logic defined below
+	process(clock, reset)
+	begin
+
+	....
+
+	end process;
+
+	-- next state logic defined below
+	process(current_state, increment)
+	begin
+
+	....
+
+	end process;
+
+	-- Output logic defined below
+	process(current_state)
+	begin
+
+	....
+
+	end process;
+
+end implementation;

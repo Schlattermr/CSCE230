@@ -1,0 +1,13 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity RegisterFile16by4Bit is
+
+	port(
+		clock, reset, RF_write :in std_logic;
+		AddressA, AddressB, AddressC :in std_logic_vector(3 downto 0);
+		InputC :in std_logic_vector(3 downto 0);
+		OutputA, OutputB :out std_logic_vector(3 downto 0)
+	);
+		
+end RegisterFile16by4Bit;

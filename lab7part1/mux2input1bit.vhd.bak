@@ -1,0 +1,18 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mux2input1bit is
+	port(
+		s : in std_logic;
+		a,b : in std_logic;
+		output : out std_logic);
+end mux2input1bit;
+
+architecture implementation of mux2input1bit is
+	signal term1, term2 : std_logic;
+begin
+	term1 <= not s and a;
+	term2 <= s and b;
+	output <= term1 or term2;
+end implementation;
+library ieee;

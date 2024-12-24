@@ -1,0 +1,13 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Adder4Bit is
+
+	port(
+		X, Y : in std_logic_vector(3 downto 0);
+		C_in : in std_logic;
+		S : out std_logic_vector(3 downto 0);
+		C_out_2, C_out_3 : out std_logic
+	);
+	
+end Adder4Bit;
